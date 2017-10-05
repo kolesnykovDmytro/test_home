@@ -1,0 +1,150 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1120px)
+	.header-top, .header-sub
+		border-bottom: 0
+		padding-bottom: 0
+	.main-info
+		order: 1
+		flex-grow: 1
+		justify-content: flex-end
+		margin-bottom: 1%
+	.header-list
+		order: 2
+		flex-grow: 1
+		border-bottom: 1px solid #dddfdf
+		border-top: 1px solid #dddfdf
+		padding: 15px 0
+	.header-top 
+		.header__search
+			.fieldset
+				.search-item
+					width: 80%
+	.header-top
+		.header__contact
+			flex-basis: 28%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+	.header-top
+		.header__search
+			flex-grow: 1
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header-sub
+		.header-list
+			li
+				font-size: 14px
+	.header-top
+		.header__search
+			flex-basis: 30%
+			flex-grow: 0
+			.fieldset
+				.search-item
+					+placeholder
+						font-size: 10px
+
+		.header__contact
+			flex-basis: 38%
+			flex-grow: 0
+			padding: 0
+			font-size: 16px
+		.header__logo
+			padding: 0
+			flex-basis: 25%
+			flex-grow: 0
+			.logo-text
+				font-size: 12px
+
+	.slick-prev, .slick-next
+		height: 65px
+		z-index: 10
+	.slide-content
+		.container-wrap
+			.slide-item
+				.text__slide
+					top: 25px
+					p
+						font-size: 32px
+
+@media only screen and (max-width : 765px)
+	.menu-mobile
+		display: flex
+	.header-sub
+		display: none
+	.header-top
+		padding-top: 18px
+		.header__logo
+			flex-basis: 60%
+			.logo-text
+				font-size: 16px
+		.header__search, .header__contact
+			display: none
+	.slick-slider, .slick-slide img
+		height: 125px
+	.slide-content
+		.container-wrap
+			.slide-item
+				.text__slide
+					padding: 10px
+					p
+						font-size: 22px
+	.slick-dots
+		display: none!important
+	.slick-next, .slick-prev
+		height: 40px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.header-top
+		.header__logo
+			flex-basis: 70%
+			.logo-text
+				font-size: 12px
+	.slide-content
+		.container-wrap
+			.slide-item
+				.text__slide
+					padding: 5px
+					left: 47px
+					top: 20px
+					p
+						font-size: 20px
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
